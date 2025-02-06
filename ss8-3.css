@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.Container {
+    background-color: black;
+    color: antiquewhite;
+    display: grid;
+    grid-template-columns: auto auto;
+    height: 100px;
+    align-items: center;
+}
+.childen {
+    padding-left: 20px;
+    padding-top: 5px;
+}
+@media screen and (max-width: 480px) {
+    .Container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
