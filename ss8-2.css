@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.Container {
+    display: flex;
+    flex-direction: row;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 2px;
+}
+.childen {
+    height: 30px;
+    text-align: center;
+    padding-top: 5px;
+    background-color: rgb(200, 94, 94);
+    color: aliceblue;
+}
+@media screen and (max-width: 1200px) {
+    .Container {
+        grid-template-columns: auto auto;
+        gap:5px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .Container {
+        display: flex;
+        flex-direction: column;
+        gap:3px;
+    }
+}
